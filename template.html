@@ -5,28 +5,538 @@
     <meta name="viewport" content="width=device-width">
     <title>Template</title>
     <style type="text/css">
+        /* Client-specific styles for Outlook und Hotmail */
+        #outlook a {
+            padding: 0;
+        }
 
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            max-width: 100%;
+        }
+
+        table {
+            border-collapse: collapse !important;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            width: 100%;
+        }
+
+        .content {
+            font-size: 15px;
+            line-height: 22px;
+            color: #000;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        .responsive-td {
+            font-size: 15px;
+            line-height: 22px;
+            color: #000;
+            text-align: left;
+        }
+
+        .responsive-td p {
+            margin-top: 0;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            line-height: 20px;
+            color: #fff;
+        }
+
+        td a img {
+            padding: 5px;
+        }
+
+        /* styles for mobile device */
+        @media only screen and (max-width: 480px) {
+            .device-width {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .hide-on-mobile {
+                display: none !important;
+            }
+
+            .content {
+                font-size: 18px !important;
+                line-height: 26px !important;
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box;
+            }
+
+            .responsive-td {
+                font-size: 18px !important;
+                line-height: 26px !important;
+                width: 100% !important;
+                display: block !important;
+                box-sizing: border-box;
+            }
+
+            .responsive-td-title {
+                text-align: left !important;
+            }
+
+            .button-img {
+                max-width: 110px !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Preheader -->
-    <div style="display:none !important; visibility:hidden; mso-hide:all; font-size:1px; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">
-      The preheader text provides a short preview that appears alongside the subject line in the inbox.
-      It gives recipients a quick glimpse of the email content and works with the subject line to encourage opens.
-      Though visible in the inbox view, it is hidden when the email is opened, typically using a hidden div style in HTML.
-      For best results across both desktop and mobile email clients, the preheader text should be between 40 and 130 characters long.
-    </div>
+<!-- Preheader -->
+<div style="display:none !important; visibility:hidden; mso-hide:all; font-size:1px; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">
+    The preheader text provides a short preview that appears alongside the subject line in the inbox.
+    It gives recipients a quick glimpse of the email content and works with the subject line to encourage opens.
+    Though visible in the inbox view, it is hidden when the email is opened, typically using a hidden div style in HTML.
+    For best results across both desktop and mobile email clients, the preheader text should be between 40 and 130
+    characters long.
+</div>
 
-    <h1>Template</h1>
-    <p>This is a template HTML mail.</p>
+<table>
+    <tr>
+        <td align="center">
+            <!--header-->
+            <table align="center" bgcolor="#ffffff" class="device-width" role="presentation" style="max-width: 650px;"
+                   width="650">
+                <tbody>
+                <tr>
+                    <td bgcolor="#002F6C" width="25px"></td>
+                    <td align="left" bgcolor="#002F6C"
+                        style="font-size: 16px; padding-top: 25px; padding-bottom: 25px; color: #ffffff;">
+                        <strong>Newsletter template</strong>
 
-    <div class="content">
-        <!-- Content goes here -->
-    </div>
+                        <!-- Date of the newsletter -->
+                        <div style="float: right; font-size: 14px;">DD.MM.YYYY</div>
+                    </td>
+                    <td bgcolor="#002F6C" width="25px"></td>
+                </tr>
+                <tr>
+                    <td width="25px"></td>
+                    <td align="left" style="padding-top: 25px; padding-bottom: 25px;">
+                        <img alt="logo"
+                             src=""
+                             width="185" height="63" style="max-width: 100%; height: auto; display: block"/>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- End header--->
 
-    <footer>
-        <p>&copy; 2025 kohei-s</p>
-    </footer>
+            <!-- Title of the newsletter -->
+            <table align="center" bgcolor="#ffffff" class="device-width" role="presentation" style="max-width: 650px;"
+                   width="650">
+                <tbody>
+                <tr>
+                    <td bgcolor="#4AA8D8" width="25px"></td>
+                    <td class="responsive-td-title" align="center" bgcolor="#4AA8D8"
+                        style="font-size: 18px; padding-top: 25px; padding-bottom: 25px; color: #ffffff;">
+                        <p style="margin-bottom: 5px;">
+                            <em>Main title of the newsletter</em>
+                        </p>
+                        <p>
+                            Subtitle of the newsletter
+                        </p>
+                    </td>
+                    <td bgcolor="#4AA8D8" width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- Ende title of the newsletter -->
+
+            <!-- Message -->
+            <table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tr>
+                    <td width="25px"></td>
+                    <!-- Adressat-->
+                    <td class="content" width="600"
+                        style="padding-top: 20px; padding-bottom: 20px; text-align: left; max-width: 600px; width: 100%; height: auto;">
+                        <!-- Adressat -->
+                        <p>{contact.email_greeting_display},</p>
+
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                <tr>
+                    <td width="25px"></td>
+                    <td width="100%" height="20px"></td>
+                    <td width="25px"></td>
+                </tr>
+            </table>
+            <!-- End message-->
+
+            <!-- 1. section -->
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px" style="background-color: #B0D4F1;"></td>
+                    <td class="responsive-td-title"
+                        style="font-size: 18px; text-align: center; background-color: #B0D4F1; vertical-align: top; padding-top: 20px; padding-bottom: 20px;">
+                        <p>
+                            Title of the 1. section - subtitle!
+                        </p>
+                    </td>
+                    <td width="25px" style="background-color: #B0D4F1;"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" width="200"
+                        style="text-align:left; max-width: 200px; height: auto; padding-top: 15px;">
+                        <p>
+                            <img alt="Image 1. section "
+                                 src=""
+                                 width="200" height="300" style="max-width: 100%; height: auto"/>
+                        </p>
+                    </td>
+                    <td class="hide-on-mobile" width="25px"></td>
+                    <td class="responsive-td" width="375"
+                        style="text-align:left; max-width: 375px; height: auto; padding-top: 15px;">
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" colspan="2" width="100%" height="20px"></td>
+                    <td width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- End 1. section -->
+
+            <!-- 2. section -->
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px" style="background-color: #B0D4F1;"></td>
+                    <td class="responsive-td-title"
+                        style="font-size: 18px; text-align: center; background-color: #B0D4F1; vertical-align: top; padding-top: 20px; padding-bottom: 20px;">
+                        <p>
+                            Title of the 2. section - subtitle!
+                        </p>
+                    </td>
+                    <td width="25px" style="background-color: #B0D4F1;"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" width="200"
+                        style="text-align: left; max-width: 200px; height: auto; padding-top: 15px;">
+                        <p>
+                            <img alt="Image 2. section 1"
+                                 src=""
+                                 width="200" height="300" style="max-width: 100%; height: auto;" />
+                        </p>
+                    </td>
+                    <td class="hide-on-mobile" width="25px"></td>
+                    <td class="responsive-td" width="375"
+                        style="text-align: left; max-width: 375px; height: auto; padding-top: 15px;">
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" width="200"
+                        style="text-align: left; max-width: 200px; height: auto; padding-top: 15px;">
+
+                        <p>
+                            <img alt="Image 2. section 2"
+                                 src=""
+                                 width="200" height="300" style="max-width: 100%; height: auto;" />
+                        </p>
+                    </td>
+                    <td class="hide-on-mobile" width="25px"></td>
+                    <td class="responsive-td" width="375"
+                        style="text-align: left; max-width: 375px; height: auto; padding-top: 15px;">
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" width="200"
+                        style="text-align: left; max-width: 200px; height: auto; padding-top: 15px;">
+
+                        <p>
+                            <img alt="Image 2. section 3"
+                                 src=""
+                                 width="200" height="300" style="max-width: 100%; height: auto;" />
+                        </p>
+                    </td>
+                    <td class="hide-on-mobile" width="25px"></td>
+                    <td class="responsive-td" width="375"
+                        style="text-align: left; max-width: 375px; height: auto; padding-top: 15px;">
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" width="600"
+                        style="text-align: left; max-width: 600px; width: 100%; height: auto;">
+                        <br class="hide-on-mobile" />
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text. text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text. text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            <a href="">Link to infos</a>
+                        </p>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" colspan="2" width="100%" height="20px"></td>
+                    <td width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- End 2. section -->
+
+            <!-- 3. section -->
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px" style="background-color: #B0D4F1;"></td>
+                    <td class="responsive-td-title"
+                        style="font-size: 18px; text-align: center; background-color: #B0D4F1; vertical-align: top; padding-top: 20px; padding-bottom: 20px;">
+                        <p>
+                            Title of the 3. section - subtitle!
+                        </p>
+                    </td>
+                    <td width="25px" style="background-color: #B0D4F1;"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table table align="center" bgcolor="#ffffff" class="device-width" role="presentation" width="650"
+                   style="max-width: 650px; table-layout:fixed;">
+                <tbody>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" width="200"
+                        style="text-align: left; max-width: 200px; height: auto; padding-top: 15px;">
+                        <p>
+                            <img alt="Image 3. section"
+                                 src="0"
+                                 width="200" height="250" style="max-width: 100%; height: auto;" />
+                        </p>
+                    </td>
+                    <td class="hide-on-mobile" width="25px"></td>
+                    <td class="responsive-td" width="375"
+                        style="text-align: left; max-width: 375px; height: auto; padding-top: 15px;">
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            text text text text text text text text text text text text text text text text text text
+                            text text text text text text text text text text text text text text.
+                        </p>
+                        <p>
+                            <a href=""> Link to website</a>
+                        </p>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                <tr>
+                    <td width="25px"></td>
+                    <td class="responsive-td" colspan="2" width="100%" height="20px"></td>
+                    <td width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- End 3. section -->
+
+            <!-- Footer -->
+            <table align="center" bgcolor="#002F6C" class="device-width" role="presentation" style="max-width: 650px;"
+                   width="650">
+                <tbody>
+                <tr>
+                    <td width="25px"></td>
+                    <td align="center" width="275" style="max-width: 275px;">
+                        <a href="">
+                            <img alt="Button link to donate"
+                                 src=""
+                                 width="130" height="130" class="spenden-img"
+                                 style="display:block; max-width: 130px; width: 100%; height: auto"/></a>
+                    </td>
+                    <td width="25px"></td>
+                    <td align="right" class="footer-text" width="300"
+                        style="max-width: 300px; text-align: left; padding-top: 20px; padding-bottom: 20px;">
+                        <p>
+                            Responsible for content according to § 55 (2) of the RStV; Information pursuant to § 5 of
+                            the TTMG.
+                        </p>
+
+                        <p>
+                            <strong>Name of the organisation</strong><br/>
+                            {domain.address}
+                        </p>
+
+                        <p>
+                            <strong>Board:</strong><br/>
+                            Firstname Lastname (chair)<br/>
+                            Firstname Lastname (deputy chair)<br/>
+                            Firstname Lastname (treasurer)
+                        </p>
+
+                        <p>
+                            <a href="https://www.instagram.com/">
+                                <img alt="Instagram"
+                                     src=""
+                                     style="width: 24px; height: 24px;"/>
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <img alt="Facebook"
+                                     src=""
+                                     style="width: 24px; height: 24px;"/>
+                            </a>
+                            <a href="https://www.linkedin.com/">
+                                <img alt="Linkedin"
+                                     src=""
+                                     style="width: 24px; height: 24px;"/>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="{action.unsubscribeUrl}" style="color: #fff; text-decoration: underline;">
+                                Unsubscribe from the newsletter</a>
+                        </p>
+                    </td>
+                    <td width="25px"></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- End footer -->
+        </td>
+    </tr>
+</table>
 </body>
 
 </html>
